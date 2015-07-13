@@ -1,5 +1,7 @@
 package be.vdab.controller;
 
+import be.vdab.repository.MovieRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -11,11 +13,14 @@ import java.util.Map;
 @Controller
 @RequestMapping("movie")
 public class MovieController {
+    @Autowired
+    MovieRepository movieRepository;
 
 //    @RequestMapping(value = "/movieList")
 //    public String findAllActors(Map<String,Object> model){
-//        model.put("allActors", personRepository.findAll());
-//        return "actorList";
+//        model.put("allMovies", MovieRepository.findAll());
+//        return "movieList";
 //    }
+
 
 }
