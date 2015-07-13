@@ -9,10 +9,7 @@ import javax.persistence.Id;
  * Created by jeansmits on 10/07/15.
  */
 @Entity
-public class Producer{
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+public class Producer extends Person{
     private String picture;
     private String bigography;
 
@@ -22,14 +19,6 @@ public class Producer{
     }
 
     public Producer() {
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 
     public String getPicture() {
@@ -51,7 +40,7 @@ public class Producer{
     @Override
     public String toString() {
         return "Producer{" +
-                "id=" + id +
+                "id=" + getId() +
                 ", picture='" + picture + '\'' +
                 ", bigography='" + bigography + '\'' +
                 '}';

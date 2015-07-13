@@ -24,7 +24,14 @@ public class ActorController {
     public String findById(@PathVariable("personId") int id, Map<String,Object> model){
 
          Person person1 =personRepository.findOne(id);
-        model.put("createActor",  person1);
+        model.put("Actor",  person1);
         return "actor";
     }
+
+    @RequestMapping(value = "/actorList")
+    public String findAllActors(Map<String,Object> model){
+        model.put("allActors", personRepository.findAll());
+        return "actorList";
+    }
+
 }
