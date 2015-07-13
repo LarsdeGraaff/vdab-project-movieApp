@@ -12,5 +12,6 @@
 </head>
 <body>
 <p>Dit is de detailpagina van de acteurs</p>
+${createActor}
 </body>
 </html>

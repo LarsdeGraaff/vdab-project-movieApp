@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Map;
+
 /**
  * Created by jeansmits on 10/07/15.
  */
@@ -19,8 +21,10 @@ public class ActorController {
     private PersonRepository personRepository;
 
     @RequestMapping(value="/{personId}")
-    public String findById(@PathVariable("personId") int id){
+    public String findById(@PathVariable("personId") int id, Map<String,Object> model){
+
          Person person1 =personRepository.findOne(id);
+        model.put("createActor",  person1);
         return "actor";
     }
 }
