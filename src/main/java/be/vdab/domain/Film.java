@@ -14,7 +14,7 @@ public class Film {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String title;
-    private String length;
+    private String flength;
     private String summary;
     private String genre;
     private String image;
@@ -41,11 +41,11 @@ public class Film {
     }
 
     public String getLength() {
-        return length;
+        return flength;
     }
 
     public void setLength(String length) {
-        this.length = length;
+        this.flength = length;
     }
 
     public String getSummary() {

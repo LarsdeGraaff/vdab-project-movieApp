@@ -20,7 +20,17 @@
         <div class="col-md-2"></div>
         <div class="headerTitel col-md-10">
             <h1>${film.title} </h1>
+            <div class="movieInfo">
+
+            </div>
+            <iframe width="560" height="315" src="${film.trailer}" frameborder="0" allowfullscreen></iframe>
         </div>
+
+
+
+
+
+
     </div>
 
 
