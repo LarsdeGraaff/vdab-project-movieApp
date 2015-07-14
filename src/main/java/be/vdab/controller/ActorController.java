@@ -6,10 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.Map;
@@ -51,5 +48,13 @@ public class ActorController {
         personRepository.save(person);
         return "redirect:/actor/actorList";
     }
+
+    @RequestMapping(value="/deleteActor")
+    public String deleteActor(@RequestParam(value="id") Integer actorId){
+        personRepository.delete(actorId);
+        return "redirect:/actor/actorList";
+    }
+
+
 
 }

@@ -35,12 +35,13 @@
         <td>${a.gender}</td>
 
         <td><a href="form" class="btn  btn-warning">edit</a>
-        <a href="form" class="btn  btn-danger">Delete</a></td>
+        <a href="deleteActor?id=${a.id}" class="btn  btn-danger">Delete</a></td>
       </tr>
     </c:forEach>
   </table>
 
   <a href="actorForm" class=" col-md-12 btn btn-block btn-primary">actor toevoegen</a>
+
 </div>
 
 </body>
