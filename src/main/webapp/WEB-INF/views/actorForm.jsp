@@ -36,14 +36,14 @@
         </div>
         <div>
             <form:label path="birthday">Birthday</form:label>
-            <sf:errors path="birthday" />
+
             <sf:input path="birthday" id="birthday"/>
+            <div><sf:errors path="birthday" cssStyle="color: red"/></div>
         </div>
         <div>
             <form:label path="gender">Gender</form:label>
             <sf:input path="gender" id="gender"/>
         </div>
-
 
         <sf:hidden path="id"/>
         <div>

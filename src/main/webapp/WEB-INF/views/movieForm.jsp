@@ -23,6 +23,7 @@
   <h1>Movie</h1>
 
   <sf:form action="create" commandName="film" method="post">
+
     <div>
       <form:label path="title">Movie Title</form:label>
       <sf:input path="title" id="title"/>
@@ -31,7 +32,6 @@
       <form:label path="genre">Genre</form:label>
       <sf:input path="genre" id="genre"/>
     </div>
-
 
 
     <sf:hidden path="id"/>
