@@ -33,7 +33,7 @@
                 <td>${a.genre}</td>
 
 
-                <td><a href="form" class="btn  btn-warning">edit</a>
+                <td><a href="movieForm?id=${a.id}" class="btn  btn-warning">edit</a>
                     <a href="deleteMovie?id=${a.id}" class="btn  btn-danger">Delete</a>
                 </td>
             </tr>

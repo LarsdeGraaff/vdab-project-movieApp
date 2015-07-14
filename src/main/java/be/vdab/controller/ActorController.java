@@ -35,8 +35,12 @@ public class ActorController {
     }
 
     @RequestMapping("/actorForm")
-    public String form (Map<String, Object> model){
-        model.put("person", new Person());
+    public String form (Map<String, Object> model,@RequestParam(value = "id",required = false) Integer actorId){
+        if (actorId == null) {
+            model.put("person", new Person());
+        } else {
+            model.put("person", personRepository.findOne(actorId));
+        }
         return "actorForm";
     }
 

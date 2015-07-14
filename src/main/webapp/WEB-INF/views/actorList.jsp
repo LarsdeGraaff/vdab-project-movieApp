@@ -34,7 +34,7 @@
         <td>${a.country}</td>
         <td>${a.gender}</td>
 
-        <td><a href="form" class="btn  btn-warning">edit</a>
+        <td><a href="actorForm?id=${a.id}" class="btn  btn-warning">edit</a>
         <a href="deleteActor?id=${a.id}" class="btn  btn-danger">Delete</a></td>
       </tr>
     </c:forEach>
