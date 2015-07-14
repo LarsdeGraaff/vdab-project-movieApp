@@ -20,10 +20,10 @@
       <th>ID</th>
       <th>First Name</th>
       <th>Last Name</th>
-      <th>Birthdat</th>
+      <th>Birthdate</th>
       <th>Country</th>
       <th>Gender</th>
-      <th>options</th>
+      <th>Options</th>
     </tr>
     <c:forEach items="${allActors}" var="a">
       <tr><td>${a.id}</td>

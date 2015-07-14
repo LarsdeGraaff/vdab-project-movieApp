@@ -1,5 +1,7 @@
 package be.vdab.controller;
 
+import be.vdab.domain.Film;
+import be.vdab.domain.Person;
 import be.vdab.repository.MovieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,6 +23,18 @@ public class MovieController {
 //        model.put("allMovies", MovieRepository.findAll());
 //        return "movieList";
 //    }
+
+    @RequestMapping(value = "/movieList")
+    public String findAllMovies(Map<String,Object> model){
+        model.put("allMovies", movieRepository.findAll());
+        return "movieList";
+    }
+
+    @RequestMapping("/movieForm")
+    public String form (Map<String, Object> model){
+        model.put("film", new Film());
+        return "movieForm";
+    }
 
 
 }

@@ -5,10 +5,13 @@ import be.vdab.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.Valid;
 import java.util.Map;
 
 /**
@@ -38,6 +41,15 @@ public class ActorController {
     public String form (Map<String, Object> model){
         model.put("person", new Person());
         return "actorForm";
+    }
+
+    @RequestMapping(value = "/create", method = RequestMethod.POST)
+    public String create(@Valid Person person, BindingResult bindingResult){
+        if(bindingResult.hasErrors()){
+            return "actor/actorForm";
+        }
+        personRepository.save(person);
+        return "redirect:/actor/actorList";
     }
 
 }

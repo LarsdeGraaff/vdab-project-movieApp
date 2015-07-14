@@ -21,23 +21,20 @@
     <tr> 
       <th>ID</th>
       <th>Title</th>
-      <th>length</th>
-      <th>summary</th>
       <th>genre</th>
-      <th>trailer</th>
-      <th>userRating</th>
+      <th>options</th>
     </tr>
-    <c:forEach items="${allActors}" var="a">
+    <c:forEach items="${allMovies}" var="a">
       <tr><td>${a.id}</td>
 
-        <td><a href="${a.id}">${a.firstName}</a></td>
-        <td>${a.lastName}</td>
-        <td>${a.birthday}</td>
-        <td>${a.country}</td>
-        <td>${a.gender}</td>
+        <td><a href="${a.id}">${a.title}</a></td>
+
+
+        <td>${a.genre}</td>
+
 
         <td><a href="form" class="btn  btn-warning">edit</a>
-          <a href="form" class="btn  btn-danger">Delete</a></td>
+         </td>
       </tr>
     </c:forEach>
   </table>
@@ -47,7 +44,7 @@
 
 
 
-  <a href="form" class=" col-md-12 btn btn-block btn-primary">actor toevoegen</a>
+  <a href="movieForm" class=" col-md-12 btn btn-block btn-primary">Movie toevoegen</a>
 </div>
 
 </body>
