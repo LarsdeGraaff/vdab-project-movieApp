@@ -16,14 +16,10 @@
 <body>
 
 
-
-
-
 <div class="container col-md-12" >
-  <div class="logo col-md-2">
-  <h1>LMDB</h1></div>
+<div class="col-md-2"></div>
   <div class="headerTitel col-md-10">
-  <h5>Detailpagina van de acteurs</h5>
+  <h1>${Actor.firstName} ${Actor.lastName}</h1>
   </div>
 </div>
 <div class="paginaContent col-md-12">
@@ -32,17 +28,15 @@
   </div>
 
   <div class="paginaDetail col-md-8">
-    <table class=" table table-condensed table-hover table-striped ">
-      <tr>
-        <th>ID</th>
-        <th>Actor</th>
 
-      </tr>
-      <tr><td>${Actor.id}</td>
-    <td>${Actor.firstName}</td>
-      </tr>
-      </table>
+    <h3>Image</h3>
+    <img src="${Actor.picture}"/>
+
+    <h3>Biography ${Actor.firstName} ${Actor.lastName}</h3>
+    ${Actor.biography}
   </div>
+
+
 
   <div class="rechts col-md-2">
 

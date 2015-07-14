@@ -9,10 +9,10 @@ import javax.persistence.*;
 public class Actor extends Person {
 
     @Lob
-    private byte[] picture;
+    private String picture;
     private String biography;
 
-    public Actor(byte[] picture, String biography) {
+    public Actor(String picture, String biography) {
         this.picture = picture;
         this.biography = biography;
     }
@@ -21,11 +21,11 @@ public class Actor extends Person {
     }
 
 
-    public byte[] getPicture() {
+    public String getPicture() {
         return picture;
     }
 
-    public void setPicture(byte[] picture) {
+    public void setPicture(String picture) {
         this.picture = picture;
     }
 
