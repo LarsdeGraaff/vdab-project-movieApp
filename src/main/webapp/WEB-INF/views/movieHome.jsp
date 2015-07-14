@@ -17,6 +17,11 @@
 <div class="container ">
   <h1>HOMEPAGE LMDB</h1>
 
+  <a href="actor/actorList" class="btn btn-primary">ALL ACTORS</a>
+  <a href="movie/movieList" class="btn btn-primary">ALL MOVIES</a>
+
+
+
 </div>
 </body>
 </html>
