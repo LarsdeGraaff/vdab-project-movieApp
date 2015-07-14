@@ -34,4 +34,10 @@ public class ActorController {
         return "actorList";
     }
 
+    @RequestMapping("/actorForm")
+    public String form (Map<String, Object> model){
+        model.put("person", new Person());
+        return "actorForm";
+    }
+
 }

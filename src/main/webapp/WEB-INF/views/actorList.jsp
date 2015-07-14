@@ -16,8 +16,6 @@
   <h1>All Actors</h1>
   <table class=" table table-condensed table-hover table-striped ">
 
-
-
     <tr> 
       <th>ID</th>
       <th>First Name</th>
@@ -42,12 +40,7 @@
     </c:forEach>
   </table>
 
-
-
-
-
-
-  <a href="form" class=" col-md-12 btn btn-block btn-primary">actor toevoegen</a>
+  <a href="actorForm" class=" col-md-12 btn btn-block btn-primary">actor toevoegen</a>
 </div>
 
 </body>
