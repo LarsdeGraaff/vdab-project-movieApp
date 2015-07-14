@@ -36,6 +36,7 @@
         </div>
         <div>
             <form:label path="birthday">Birthday</form:label>
+            <sf:errors path="birthday" />
             <sf:input path="birthday" id="birthday"/>
         </div>
         <div>

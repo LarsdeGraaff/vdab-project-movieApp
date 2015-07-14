@@ -46,10 +46,10 @@ public class ActorController {
     @RequestMapping(value = "/create", method = RequestMethod.POST)
     public String create(@Valid Person person, BindingResult bindingResult){
         if(bindingResult.hasErrors()){
-            return "actor/actorForm";
+            return "actorForm";
         }
         personRepository.save(person);
-        return "redirect:/actor/actorList";
+        return "redirect:/actorList";
     }
 
 }
