@@ -49,7 +49,7 @@ public class ActorController {
             return "actorForm";
         }
         personRepository.save(person);
-        return "redirect:/actorList";
+        return "redirect:/actor/actorList";
     }
 
 }

@@ -1,9 +1,6 @@
 package be.vdab.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * Created by jeansmits on 10/07/15.
@@ -11,10 +8,11 @@ import javax.persistence.Id;
 @Entity
 public class Actor extends Person {
 
-    private String picture;
+    @Lob
+    private byte[] picture;
     private String biography;
 
-    public Actor(String picture, String biography) {
+    public Actor(byte[] picture, String biography) {
         this.picture = picture;
         this.biography = biography;
     }
@@ -23,11 +21,11 @@ public class Actor extends Person {
     }
 
 
-    public String getPicture() {
+    public byte[] getPicture() {
         return picture;
     }
 
-    public void setPicture(String picture) {
+    public void setPicture(byte[] picture) {
         this.picture = picture;
     }
 

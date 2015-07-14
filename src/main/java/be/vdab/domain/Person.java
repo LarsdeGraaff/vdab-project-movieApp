@@ -1,10 +1,14 @@
 package be.vdab.domain;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.util.Date;
+
+import static org.springframework.format.annotation.DateTimeFormat.ISO.DATE;
 
 /**
  * Created by jeansmits on 10/07/15.
@@ -16,6 +20,8 @@ public class Person {
     private Integer id;
     private  String firstName;
     private String lastName;
+
+    @DateTimeFormat(iso = DATE)
     private Date birthday;
     private String gender;
     private String country;
