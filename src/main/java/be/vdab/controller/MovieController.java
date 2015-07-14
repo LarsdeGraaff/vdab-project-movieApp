@@ -6,6 +6,7 @@ import be.vdab.repository.MovieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -21,6 +22,13 @@ import java.util.Map;
 public class MovieController {
     @Autowired
     MovieRepository movieRepository;
+
+    @RequestMapping(value="/{movieId}")
+    public String findById(@PathVariable("movieId") int id, Map<String,Object> model){
+        Film film =movieRepository.findOne(id);
+        model.put("film",  film);
+        return "movie";
+    }
 
     @RequestMapping(value = "/movieList")
     public String findAllMovies(Map<String,Object> model){

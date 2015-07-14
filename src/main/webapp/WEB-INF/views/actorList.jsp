@@ -41,6 +41,7 @@
   </table>
 
   <a href="actorForm" class=" col-md-12 btn btn-block btn-primary">actor toevoegen</a>
+  <a href="/" class=" col-md-12 btn btn-block btn-info">HOMEPAGE</a>
 
 </div>
 

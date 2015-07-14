@@ -9,4 +9,4 @@ INSERT INTO film(title, genre) Values ('Test','test');
 INSERT INTO film(title, genre) Values ('Scarface','action');
 INSERT INTO film(title, genre) Values ('Dude Where Is My Car','Comdey');
 INSERT INTO film(title, genre) Values ('Shutters Island','thriller');
-INSERT INTO film(title, genre) Values ('Django Unchained','action');
+INSERT INTO film(title, genre,trailer) Values ('Django Unchained','action','https://www.youtube.com/embed/eUdM9vrCbow');

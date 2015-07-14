@@ -42,6 +42,7 @@
 
 
     <a href="movieForm" class=" col-md-12 btn btn-block btn-primary">Movie toevoegen</a>
+    <a href="/" class=" col-md-12 btn btn-block btn-info">HOMEPAGE</a>
 </div>
 
 </body>
