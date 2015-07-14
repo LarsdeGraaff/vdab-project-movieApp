@@ -30,7 +30,7 @@
   <div class="paginaDetail col-md-8">
 
     <h3>Image</h3>
-    <img src="${Actor.picture}"/>
+    <img src="${Actor.picture}" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"/>
 
     <h3>Biography ${Actor.firstName} ${Actor.lastName}</h3>
     ${Actor.biography}
