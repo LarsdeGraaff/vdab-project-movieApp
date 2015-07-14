@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.validation.Valid;
 import java.util.Map;
@@ -39,6 +40,12 @@ public class MovieController {
             return "movieForm";
         }
         movieRepository.save(film);
+        return "redirect:/movie/movieList";
+    }
+
+    @RequestMapping(value="/deleteMovie")
+    public String deleteMovie(@RequestParam(value="id") Integer movieId){
+        movieRepository.delete(movieId);
         return "redirect:/movie/movieList";
     }
 

@@ -5,6 +5,8 @@ INSERT INTO person(first_name,last_name, birthday, country, gender, biography, p
 INSERT INTO person(first_name,last_name, birthday, country, gender, biography, picture,dtype ) VALUES ('James','Gandolfini', '1961-09-18', 'USA','male', 'the role that brought him worldwide fame and accolades was as complex Mafia boss Tony Soprano in HBO''s smash hit series The Sopranos (1999). He died unexpectedly of a heart attack in 2013 while vacationing in Italy.','http://timothywhite.com/sites/default/files/images/portfolio/141_James-Gandolfini.jpg' ,'Actor');
 
 
-INSERT INTO film(title, genre) Values ('Django Unchained','action');
+INSERT INTO film(title, genre) Values ('Test','test');
 INSERT INTO film(title, genre) Values ('Scarface','action');
 INSERT INTO film(title, genre) Values ('Dude Where Is My Car','Comdey');
+INSERT INTO film(title, genre) Values ('Shutters Island','thriller');
+INSERT INTO film(title, genre) Values ('Django Unchained','action');
