@@ -7,6 +7,6 @@ INSERT INTO person(first_name,last_name, birthday, country, gender, biography, p
 
 INSERT INTO film(title, genre,trailer,summary) Values ('Test','test','test','test');
 INSERT INTO film(title, genre,trailer,summary) Values ('Scarface','action','https://www.youtube.com/embed/7pQQHnqBa2E','Tony Montana is going to rule the gangsterworld');
-INSERT INTO film(title, genre,trailer,summary) Values ('Dude Where Is My Car','Comdey','https://www.youtube.com/embed/d1wuijgeaaY','2 mannen die na ee nscheve avond niet meer weten wat er gebeurd is, en er zijn vreemde dingen gebeurd');
+INSERT INTO film(title, genre,trailer,summary) Values ('Dude Where Is My Car','Comedey','https://www.youtube.com/embed/d1wuijgeaaY','2 mannen die na ee nscheve avond niet meer weten wat er gebeurd is, en er zijn vreemde dingen gebeurd');
 INSERT INTO film(title, genre,trailer,summary) Values ('Shutters Island','thriller','https://www.youtube.com/embed/5iaYLCiq5RM','dit is de summary van de film Shutter island');
 INSERT INTO film(title, genre,trailer,summary) Values ('Django Unchained','action','https://www.youtube.com/embed/eUdM9vrCbow','de slaaf django wordt vrijgekocht en gaat mee op jacht met bountyhunter');

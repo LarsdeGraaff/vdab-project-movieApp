@@ -21,7 +21,8 @@
         <div class="headerTitel col-md-10">
             <h1>${film.title} </h1>
             <div class="movieInfo">
-
+            <h3>${film.genre}</h3>
+            <p>${film.summary}</p>
             </div>
             <iframe width="560" height="315" src="${film.trailer}" frameborder="0" allowfullscreen></iframe>
         </div>
