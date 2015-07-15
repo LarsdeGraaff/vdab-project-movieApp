@@ -12,6 +12,12 @@
 </head>
 <body>
 
+<div class="container ">
+  <a href="/"> <h1>LMDB</h1></a>
+
+
+</div>
+
 <div class="container">
   <h1>All Actors</h1>
   <table class=" table table-condensed table-hover table-striped ">
@@ -23,7 +29,8 @@
       <th>Birthdate</th>
       <th>Country</th>
       <th>Gender</th>
-      <th>Options</th>
+      <th>Edit</th>
+      <th>Delete</th>
     </tr>
     <c:forEach items="${allActors}" var="a">
       <tr><td>${a.id}</td>
@@ -34,14 +41,14 @@
         <td>${a.country}</td>
         <td>${a.gender}</td>
 
-        <td><a href="actorForm?id=${a.id}" class="btn  btn-warning">edit</a>
-        <a href="deleteActor?id=${a.id}" class="btn  btn-danger">Delete</a></td>
+        <td><a href="actorForm?id=${a.id}" class="btn  btn-warning  glyphicon glyphicon-pencil"></a></td>
+        <td><a href="deleteActor?id=${a.id}" class="btn  btn-danger glyphicon glyphicon-trash"></a></td>
       </tr>
     </c:forEach>
   </table>
 
-  <a href="actorForm" class=" col-md-12 btn btn-block btn-primary">actor toevoegen</a>
-  <a href="/" class=" col-md-12 btn btn-block btn-info">HOMEPAGE</a>
+  <a href="actorForm" class=" col-md-12 btn btn-block btn-primary glyphicon glyphicon-plus">  ADD ACTOR</a>
+
 
 </div>
 

@@ -11,6 +11,11 @@
     <title></title>
 </head>
 <body>
+<div class="container ">
+    <a href="/"> <h1>LMDB</h1></a>
+
+
+</div>
 
 <div class="container">
     <h1>All Movies</h1>
@@ -22,7 +27,8 @@
             <th> </th>
             <th>Title</th>
             <th>genre</th>
-            <th>options</th>
+            <th>Edit</th>
+            <th>Delete</th>
         </tr>
         <c:forEach items="${allMovies}" var="a">
             <tr>
@@ -35,16 +41,15 @@
                 <td>${a.genre}</td>
 
 
-                <td><a href="movieForm?id=${a.id}" class="btn  btn-warning">edit</a>
-                    <a href="deleteMovie?id=${a.id}" class="btn  btn-danger">Delete</a>
-                </td>
+                <td><a href="movieForm?id=${a.id}" class="btn  btn-warning glyphicon glyphicon-pencil"></a></td>
+                <td><a href="deleteMovie?id=${a.id}" class="btn  btn-danger glyphicon glyphicon-trash"></a></td>
             </tr>
         </c:forEach>
     </table>
 
 
-    <a href="movieForm" class=" col-md-12 btn btn-block btn-primary">Movie toevoegen</a>
-    <a href="/" class=" col-md-12 btn btn-block btn-info">HOMEPAGE</a>
+    <a href="movieForm" class=" col-md-12 btn btn-block btn-primary glyphicon glyphicon-plus">  ADD MOVIE </a>
+
 </div>
 
 </body>
