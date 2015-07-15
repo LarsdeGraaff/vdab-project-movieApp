@@ -16,25 +16,24 @@
 <body>
 
 
-    <div class="container col-md-12">
-        <div class="col-md-2"></div>
-        <div class="headerTitel col-md-10">
-            <h1>${film.title} </h1>
-            <div class="movieInfo">
-            <h3>${film.genre}</h3>
-            <p>${film.summary}</p>
-            </div>
-            <iframe width="560" height="315" src="${film.trailer}" frameborder="0" allowfullscreen></iframe>
+<div class="container col-md-12">
+    <div class="col-md-2"></div>
+    <div class="headerTitel col-md-10">
+        <h1>${film.title} </h1>
+
+        <div class="movieImage col-md-2">
+            <img src="${film.image}" class="img-thumbnail" alt="NO IMAGE" width="200" height="400"/>
         </div>
+        <div class="movieInfo col-md-10" >
+            <h6>${film.genre} ${film.flength}</h6>
 
-
-
-
-
-
+            <p>${film.summary}</p>
+        </div>
+        <iframe width="560" height="315" src="${film.trailer}" frameborder="0" allowfullscreen></iframe>
     </div>
 
 
+</div>
 
 
 </body>

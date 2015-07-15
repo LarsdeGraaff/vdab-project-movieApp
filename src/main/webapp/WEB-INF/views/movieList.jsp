@@ -27,7 +27,7 @@
         <c:forEach items="${allMovies}" var="a">
             <tr>
                 <td>${a.id}</td>
-                <td><img src="${a.image}" class="img-thumbnail" alt="Cinque Terre" width="50" height="100"/></td>
+                <td><img src="${a.image}" class="img-thumbnail"  alt="NO IMAGE"width="35" height="70"/></td>
 
                 <td><a href="${a.id}">${a.title}</a></td>
 

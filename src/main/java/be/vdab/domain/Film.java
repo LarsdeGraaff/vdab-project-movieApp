@@ -39,13 +39,6 @@ public class Film {
         this.title = title;
     }
 
-    public String getLength() {
-        return flength;
-    }
-
-    public void setLength(String length) {
-        this.flength = length;
-    }
 
     public String getSummary() {
         return summary;
@@ -53,6 +46,14 @@ public class Film {
 
     public void setSummary(String summary) {
         this.summary = summary;
+    }
+
+    public String getFlength() {
+        return flength;
+    }
+
+    public void setFlength(String flength) {
+        this.flength = flength;
     }
 
     public Genre getGenre() {
