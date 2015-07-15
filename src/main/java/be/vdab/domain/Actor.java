@@ -12,6 +12,7 @@ public class Actor extends Person {
     private String picture;
     private String biography;
 
+
     public Actor(String picture, String biography) {
         this.picture = picture;
         this.biography = biography;
@@ -19,6 +20,7 @@ public class Actor extends Person {
 
     public Actor() {
     }
+
 
 
     public String getPicture() {

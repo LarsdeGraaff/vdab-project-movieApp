@@ -1,6 +1,8 @@
 package be.vdab.domain;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by jeansmits on 13/07/15.
@@ -18,6 +20,8 @@ public class Film {
     private String image;
     private String trailer;
     private String userRating;
+    @OneToMany
+    private List<Character> character = new ArrayList<>();
 
 
     public Film() {
@@ -88,5 +92,11 @@ public class Film {
         this.userRating = userRating;
     }
 
+    public List<Character> getCharacter() {
+        return character;
+    }
 
+    public void setCharacter(List<Character> character) {
+        this.character = character;
+    }
 }

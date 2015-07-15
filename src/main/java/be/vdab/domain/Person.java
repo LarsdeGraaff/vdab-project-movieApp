@@ -24,9 +24,13 @@ public class Person {
     private Gender gender;
     private String country;
 
+
     public Person() {
 
     }
+
+
+
 
     public Integer getId() {
         return id;

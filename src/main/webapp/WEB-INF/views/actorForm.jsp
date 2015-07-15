@@ -1,7 +1,6 @@
 <%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 
 <%--
@@ -25,41 +24,39 @@
 <div class="container">
     <h1>Actor</h1>
     <sf:form action="create" commandName="person" method="post">
-        <div>
+    <div>
         <form:label path="firstName">First Name</form:label>
         <sf:input path="firstName" id="firstName"/>
-        </div>
-        <div>
+    </div>
+    <div>
         <form:label path="lastName">Last Name</form:label>
         <sf:input path="lastName" id="lastName"/>
-        </div>
-        <div>
-            <form:label path="country">Country</form:label>
-            <sf:input path="country" id="country"/>
-        </div>
-        <div>
-            <form:label path="birthday">Birthday</form:label>
+    </div>
+    <div>
+        <form:label path="country">Country</form:label>
+        <sf:input path="country" id="country"/>
+    </div>
+    <div>
+        <form:label path="birthday">Birthday</form:label>
 
-            <sf:input path="birthday" id="birthday"/>
-            <div><sf:errors path="birthday" cssStyle="color: red"/></div>
-        </div>
+        <sf:input path="birthday" id="birthday"/>
+        <div><sf:errors path="birthday" cssStyle="color: red"/></div>
+    </div>
 
-            <form:label path="gender">Gender</form:label>
-                <form:select path="gender">
-                    <form:option value="NONE" label="--- Select ---" />
-                    <form:options items="${a.gender}" />
-                </form:select>
-
-
+    <form:label path="gender">Gender</form:label>
+    <form:select path="gender">
+        <form:option value="NONE" label="--- Select ---"/>
+        <form:options items="${a.gender}"/>
+    </form:select>
 
 
-        </div>
+</div>
 
-        <sf:hidden path="id"/>
-        <div>
-        <button type="submit" class="btn btn-success">submit</button>
-        </div>
-    </sf:form>
+<sf:hidden path="id"/>
+<div>
+    <button type="submit" class="btn btn-success">submit</button>
+</div>
+</sf:form>
 </div>
 
 </body>

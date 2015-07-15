@@ -24,14 +24,18 @@
         <div class="movieImage col-md-2">
             <img src="${film.image}" class="img-thumbnail" alt="NO IMAGE" width="200" height="400"/>
         </div>
-        <div class="movieInfo col-md-10" >
-            <h6>${film.genre} ${film.flength}</h6>
+        <div class="movieInfo col-md-10">
+            <h6>${film.genre} / ${film.flength}</h6>
 
             <p>${film.summary}</p>
         </div>
-        <iframe width="560" height="315" src="${film.trailer}" frameborder="0" allowfullscreen></iframe>
-    </div>
 
+    </div>
+    <div class="col-md-2"></div>
+    <div class="trailer col-md-10">
+
+        <iframe width="400" height="200" src="${film.trailer}" frameborder="3" allowfullscreen></iframe>
+    </div>
 
 </div>
 

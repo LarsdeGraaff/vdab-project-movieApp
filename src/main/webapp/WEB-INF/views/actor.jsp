@@ -17,32 +17,31 @@
 
 
 <div class="container col-md-12" >
-<div class="col-md-2"></div>
-  <div class="headerTitel col-md-10">
-  <h1>${Actor.firstName} ${Actor.lastName}</h1>
-  </div>
-</div>
-<div class="paginaContent col-md-12">
-  <div class="links col-md-2">
-
-  </div>
-
-  <div class="paginaDetail col-md-8">
-<div class="col-md-4">
-    <h3>Image</h3>
-    <img src="${Actor.picture}" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"/>
-</div>
-    <div class="col-md-8">
-    <h3>Biography ${Actor.firstName} ${Actor.lastName}</h3>
-    ${Actor.biography}
+    <div class="col-md-2"></div>
+          <div class="headerTitel col-md-10">
+          <h1>${Actor.firstName} ${Actor.lastName}</h1>
+          </div>
     </div>
-  </div>
+    <div class="paginaContent col-md-12">
+          <div class="links col-md-2">
+
+          </div>
+    <div class="paginaDetail col-md-8">
+    <div class="col-md-4">
+            <h3>Image</h3>
+            <img src="${Actor.picture}" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"/>
+    </div>
+        <div class="col-md-8">
+            <h3>Biography ${Actor.firstName} ${Actor.lastName}</h3>
+            ${Actor.biography}
+        </div>
+      </div>
 
 
 
-  <div class="rechts col-md-2">
+      <div class="rechts col-md-2">
 
-  </div>
+      </div>
 
 </div>
 
