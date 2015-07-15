@@ -21,6 +21,7 @@ public class Film {
     private String trailer;
     private String userRating;
     @OneToMany
+    @JoinColumn(name = "film_id")
     private List<Character> character = new ArrayList<>();
 
 

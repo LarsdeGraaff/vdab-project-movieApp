@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: jeansmits
@@ -37,8 +38,35 @@
         <iframe width="400" height="200" src="${film.trailer}" frameborder="3" allowfullscreen></iframe>
     </div>
 
-</div>
 
+    <div>
+    <c:forEach items="${film.character}" var="a">
+        <h3>${a.id}</h3>
+        <h3>${a.characterName}</h3>
+
+    </c:forEach>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
 
 </body>
 </html>
