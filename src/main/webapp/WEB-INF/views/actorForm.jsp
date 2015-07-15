@@ -1,5 +1,8 @@
 <%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+
 
 <%--
   Created by IntelliJ IDEA.
@@ -40,9 +43,16 @@
             <sf:input path="birthday" id="birthday"/>
             <div><sf:errors path="birthday" cssStyle="color: red"/></div>
         </div>
-        <div>
+
             <form:label path="gender">Gender</form:label>
-            <sf:input path="gender" id="gender"/>
+                <form:select path="gender">
+                    <form:option value="NONE" label="--- Select ---" />
+                    <form:options items="${a.gender}" />
+                </form:select>
+
+
+
+
         </div>
 
         <sf:hidden path="id"/>

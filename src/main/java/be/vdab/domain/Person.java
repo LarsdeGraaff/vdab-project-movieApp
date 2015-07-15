@@ -2,10 +2,7 @@ package be.vdab.domain;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.sql.Date;
 
 import static org.springframework.format.annotation.DateTimeFormat.ISO.DATE;
@@ -23,7 +20,8 @@ public class Person {
 
     @DateTimeFormat(iso = DATE)
     private Date birthday;
-    private String gender;
+    @Enumerated(value = EnumType.STRING)
+    private Gender gender;
     private String country;
 
     public Person() {
@@ -62,11 +60,11 @@ public class Person {
         this.birthday = birthday;
     }
 
-    public String getGender() {
+    public Gender getGender() {
         return gender;
     }
 
-    public void setGender(String gender) {
+    public void setGender(Gender gender) {
         this.gender = gender;
     }
 

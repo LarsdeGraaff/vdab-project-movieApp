@@ -1,9 +1,6 @@
 package be.vdab.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * Created by jeansmits on 13/07/15.
@@ -16,10 +13,12 @@ public class Film {
     private String title;
     private String flength;
     private String summary;
-    private String genre;
+    @Enumerated(value = EnumType.STRING)
+    private Genre genre;
     private String image;
     private String trailer;
     private String userRating;
+
 
     public Film() {
     }
@@ -56,11 +55,11 @@ public class Film {
         this.summary = summary;
     }
 
-    public String getGenre() {
+    public Genre getGenre() {
         return genre;
     }
 
-    public void setGenre(String genre) {
+    public void setGenre(Genre genre) {
         this.genre = genre;
     }
 
@@ -87,4 +86,6 @@ public class Film {
     public void setUserRating(String userRating) {
         this.userRating = userRating;
     }
+
+
 }

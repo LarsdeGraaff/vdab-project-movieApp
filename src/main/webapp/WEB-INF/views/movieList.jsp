@@ -19,6 +19,7 @@
 
         <tr> 
             <th>ID</th>
+            <th> </th>
             <th>Title</th>
             <th>genre</th>
             <th>options</th>
@@ -26,6 +27,7 @@
         <c:forEach items="${allMovies}" var="a">
             <tr>
                 <td>${a.id}</td>
+                <td><img src="${a.image}" class="img-thumbnail" alt="Cinque Terre" width="50" height="100"/></td>
 
                 <td><a href="${a.id}">${a.title}</a></td>
 

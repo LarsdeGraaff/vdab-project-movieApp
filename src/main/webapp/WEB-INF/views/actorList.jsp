@@ -29,7 +29,7 @@
       <tr><td>${a.id}</td>
 
         <td><a href="${a.id}">${a.firstName}</a></td>
-        <td>${a.lastName}</td>
+        <td><a href="${a.id}">${a.lastName}</a></td>
         <td>${a.birthday}</td>
         <td>${a.country}</td>
         <td>${a.gender}</td>

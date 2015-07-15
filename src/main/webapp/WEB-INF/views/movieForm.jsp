@@ -30,7 +30,11 @@
     </div>
     <div>
       <form:label path="genre">Genre</form:label>
-      <sf:input path="genre" id="genre"/>
+      <form:select path="genre">
+        <form:option value="NONE" label="--- Select ---" />
+        <form:options items="${genre}" />
+      </form:select>
+
     </div>
 
 
