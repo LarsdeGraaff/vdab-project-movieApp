@@ -40,11 +40,35 @@
 
 
     <div>
-    <c:forEach items="${film.character}" var="a">
-        <h3>${a.id}</h3>
-        <h3>${a.characterName}</h3>
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
 
-    </c:forEach>
+        <table class=" table table-condensed table-hover table-striped ">
+
+
+            <tr> 
+
+                <th>Character Name </th>
+                <th>Actor First Name </th>
+                <th>Actor Last Name </th>
+            </tr>
+            <c:forEach items="${film.character}" var="a">
+            <tr>
+
+                <td>${a.characterName}</td>
+                <td>${a.actor.firstName}</td>
+                <td>${a.actor.lastName}</td>
+
+
+
+            </tr>
+
+            </c:forEach>
+       </table>
+        </div>
+        <div class="col-md-2"></div>
+
+
 
 
 
