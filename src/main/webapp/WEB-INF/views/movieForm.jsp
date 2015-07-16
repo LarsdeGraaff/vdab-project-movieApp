@@ -51,6 +51,14 @@
             <div class="col-sm-10">
             <sf:input path="title" id="title" /></div>
         </div>
+
+        <div class="form-group">
+            <form:label path="image" class="col-sm-2 control-label">Image Url</form:label>
+            <div class="col-sm-10">
+                <sf:input path="image" id="image" /></div>
+        </div>
+
+
         <div class="form-group">
             <form:label path="genre" class="col-sm-2 control-label">Genre</form:label>
             <div class="col-sm-10">
@@ -59,10 +67,7 @@
                 <form:option value="NONE" label="--- Select ---"/>
                 <form:options items="${genre}"/>
             </form:select></div>
-
         </div>
-
-
 
         <div class="form-group">
             <div class="col-sm-12">

@@ -79,7 +79,8 @@
                 <div class="col-sm-10">
 
                 <sf:input path="birthday" id="birthday"/></div>
-                <div><sf:errors path="birthday" cssStyle="color: red"/></div>
+                <div><sf:errors path="birthday" cssStyle="color: red" /></div>
+
             </div>
 
             <div class="form-group">
@@ -90,12 +91,14 @@
                     <form:options items="${a.gender}"/>
                 </form:select></div>
             </div>
-        </sf:form>
-        <div class="form-group">
+            <div class="form-group">
 
-            <div class="col-sm-12">
-            <button type="submit" class="btn btn-success">submit</button></div>
-        </div>
+                <div class="col-sm-12">
+                    <button type="submit" class="btn btn-success">submit</button></div>
+            </div>
+
+        </sf:form>
+
 
 </div>
 

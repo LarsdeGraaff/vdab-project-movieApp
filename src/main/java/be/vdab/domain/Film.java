@@ -19,7 +19,7 @@ public class Film {
     private Genre genre;
     private String image;
     private String trailer;
-    private String userRating;
+    private Integer userRating;
     @OneToMany
     @JoinColumn(name = "film_id")
     private List<Character> character = new ArrayList<>();
@@ -85,11 +85,11 @@ public class Film {
         this.trailer = trailer;
     }
 
-    public String getUserRating() {
+    public Integer getUserRating() {
         return userRating;
     }
 
-    public void setUserRating(String userRating) {
+    public void setUserRating(Integer userRating) {
         this.userRating = userRating;
     }
 
