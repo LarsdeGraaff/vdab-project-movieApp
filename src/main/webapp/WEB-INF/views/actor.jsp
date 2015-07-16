@@ -33,8 +33,8 @@
         </div>
         <div>
             <ul class="nav navbar-nav">
-                <li><a href="actor/actorList" class="glyphicon glyphicon-th-list"> ACTORLIST</a></li>
-                <li><a href="movie/movieList" class=" glyphicon glyphicon-film"> MOVIELIST</a></li>
+                <li><a href="/actor/actorList" class="glyphicon glyphicon-th-list"> ACTORLIST</a></li>
+                <li><a href="/movie/movieList" class=" glyphicon glyphicon-film"> MOVIELIST</a></li>
             </ul>
         </div>
     </div>

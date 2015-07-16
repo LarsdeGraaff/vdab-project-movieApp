@@ -10,6 +10,7 @@ public class Actor extends Person {
 
     @Lob
     private String picture;
+    @Lob
     private String biography;
 
 
