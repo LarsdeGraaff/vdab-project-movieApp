@@ -1,14 +1,12 @@
 package be.vdab.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * Created by jeansmits on 10/07/15.
  */
 @Entity
+@Table(name = "film_producer")
 public class Producer extends Person{
     private String picture;
     private String bigography;
@@ -20,6 +18,7 @@ public class Producer extends Person{
 
     public Producer() {
     }
+
 
     public String getPicture() {
         return picture;

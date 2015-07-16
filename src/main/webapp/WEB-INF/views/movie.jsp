@@ -49,6 +49,7 @@
         <h6>${film.genre} / ${film.flength}</h6>
 
         <p>${film.summary}</p>
+
     </div>
 
 
@@ -80,7 +81,6 @@
                 <td>${a.actor.lastName}</td>
 
 
-
             </tr>
 
             </c:forEach>
@@ -89,25 +89,7 @@
         <div class="col-md-2"></div>
 
 
-
-
-
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </div>

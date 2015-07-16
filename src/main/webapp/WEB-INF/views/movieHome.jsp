@@ -52,11 +52,15 @@
   <div class="home">
   <a href="/"> <h1 class="glyphicon glyphicon-home">       LMDB</h1></a>
   </div>
+
   <div>
   <a href="actor/actorList" class="btn btn-primary glyphicon glyphicon-th-list">    ACTORS</a>
   <a href="movie/movieList" class="btn btn-primary glyphicon glyphicon-film">    MOVIES</a>
   </div>
 
+  <div>
+    <img src="http://plzcdn.com/ZillaIMG/f527dd54c56e99cf059ee8d03ce2c6dc_medium.jpg">
+  </div>
 
 </div>
 </body>

@@ -23,6 +23,9 @@ public class Film {
     @OneToMany
     @JoinColumn(name = "film_id")
     private List<Character> character = new ArrayList<>();
+    @OneToMany
+    @JoinColumn(name = "film_id")
+    private List<Producer> producers = new ArrayList<>();
 
 
     public Film() {
@@ -99,5 +102,13 @@ public class Film {
 
     public void setCharacter(List<Character> character) {
         this.character = character;
+    }
+
+    public List<Producer> getProducers() {
+        return producers;
+    }
+
+    public void setProducers(List<Producer> producers) {
+        this.producers = producers;
     }
 }

@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
@@ -15,6 +16,7 @@
     .container{background-color: white;
     border-radius: 15px;
     padding-bottom: 10px}
+    th{background-color: darkgray;color: white}
   </style>
     <title></title>
 </head>
@@ -56,7 +58,7 @@
 
         <td><a href="${a.id}">${a.firstName}</a></td>
         <td><a href="${a.id}">${a.lastName}</a></td>
-        <td>${a.birthday}</td>
+        <td><fmt:formatDate pattern="yyyy-MM-dd" value="${a.birthday}"/></td>
         <td>${a.country}</td>
         <td>${a.gender}</td>
 
