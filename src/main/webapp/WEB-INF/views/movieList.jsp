@@ -9,13 +9,29 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <title></title>
+    <style>
+        body{background-color: cadetblue}
+        .navbar-inverse {border-radius:0;}
+        .container{background-color: white;
+            border-radius: 15px;
+            padding-bottom: 10px}
+    </style>
 </head>
 <body>
-<div class="container ">
-    <a href="/"> <h1>LMDB</h1></a>
 
-
-</div>
+<nav class="navbar navbar-inverse navbar-static-top" radius="0px">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand active" href="/">LMDB</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a href="actor/actorList" class="glyphicon glyphicon-th-list"> ACTORLIST</a></li>
+                <li><a href="movie/movieList" class=" glyphicon glyphicon-film"> MOVIELIST</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
 <div class="container">
     <h1>All Movies</h1>
@@ -26,7 +42,7 @@
             <th>ID</th>
             <th> </th>
             <th>Title</th>
-            <th>genre</th>
+            <th>Genre</th>
             <th>Edit</th>
             <th>Delete</th>
         </tr>

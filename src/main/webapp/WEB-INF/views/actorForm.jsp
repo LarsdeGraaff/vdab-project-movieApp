@@ -17,47 +17,88 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <title></title>
+    <style>
+        body {
+            background-color: cadetblue
+        }
+
+        .navbar-inverse {
+            border-radius: 0;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 15px;
+            padding-bottom: 10px
+        }
+        .form-group{padding-bottom: 15px;
+        padding-top: 15px}
+        .form-group input{width: inherit}
+    </style>
 </head>
 <body>
 
+<nav class="navbar navbar-inverse navbar navbar-static-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand active" href="/">LMDB</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a href="/actor/actorList" class="glyphicon glyphicon-th-list"> ACTORLIST</a></li>
+                <li><a href="/movie/movieList" class=" glyphicon glyphicon-film"> MOVIELIST</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 
 <div class="container">
-    <h1>Actor</h1>
-    <sf:form action="create" commandName="person" method="post">
-    <div>
-        <form:label path="firstName">First Name</form:label>
-        <sf:input path="firstName" id="firstName"/>
-    </div>
-    <div>
-        <form:label path="lastName">Last Name</form:label>
-        <sf:input path="lastName" id="lastName"/>
-    </div>
-    <div>
-        <form:label path="country">Country</form:label>
-        <sf:input path="country" id="country"/>
-    </div>
-    <div>
-        <form:label path="birthday">Birthday</form:label>
 
-        <sf:input path="birthday" id="birthday"/>
-        <div><sf:errors path="birthday" cssStyle="color: red"/></div>
-    </div>
 
-    <form:label path="gender">Gender</form:label>
-    <form:select path="gender">
-        <form:option value="NONE" label="--- Select ---"/>
-        <form:options items="${a.gender}"/>
-    </form:select>
+        <h1>Actor</h1>
+        <sf:form action="create" commandName="person" method="post">
+            <sf:hidden path="id"/>
+            <div class="form-group">
+                <form:label path="firstName" class="col-sm-2 control-label">First Name</form:label>
+                <div class="col-sm-10">
+                    <sf:input path="firstName" id="firstName"/></div>
+            </div>
+            <div class="form-group">
+                <form:label path="lastName" class="col-sm-2 control-label">Last Name</form:label>
+                <div class="col-sm-10">
+                <sf:input path="lastName" id="lastName"/></div>
+            </div>
+            <div class="form-group">
+                <form:label path="country" class="col-sm-2 control-label">Country</form:label>
+                <div class="col-sm-10">
+                <sf:input path="country" id="country"/></div>
+            </div>
+            <div class="form-group">
+                <form:label path="birthday" class="col-sm-2 control-label">Birthday</form:label>
+                <div class="col-sm-10">
 
+                <sf:input path="birthday" id="birthday"/></div>
+                <div><sf:errors path="birthday" cssStyle="color: red"/></div>
+            </div>
+
+            <div class="form-group">
+                <form:label path="gender" class="col-sm-2 control-label">Gender</form:label>
+                <div class="col-sm-10">
+                <form:select path="gender">
+                    <form:option value="NONE" label="--- Select ---"/>
+                    <form:options items="${a.gender}"/>
+                </form:select></div>
+            </div>
+        </sf:form>
+        <div class="form-group">
+
+            <div class="col-sm-12">
+            <button type="submit" class="btn btn-success">submit</button></div>
+        </div>
 
 </div>
 
-<sf:hidden path="id"/>
-<div>
-    <button type="submit" class="btn btn-success">submit</button>
-</div>
-</sf:form>
-</div>
 
 </body>
 </html>
