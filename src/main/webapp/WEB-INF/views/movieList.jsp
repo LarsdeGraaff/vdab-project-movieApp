@@ -15,6 +15,10 @@
         .container{background-color: white;
             border-radius: 15px;
             padding-bottom: 10px}
+        th{background-color: darkgray;color: white}
+        .actorlist{font-size: large}
+        .movielist{font-size: large}
+
     </style>
 </head>
 <body>
@@ -26,8 +30,8 @@
         </div>
         <div>
             <ul class="nav navbar-nav">
-                <li><a href="/actor/actorList" class="glyphicon glyphicon-th-list"> ACTORLIST</a></li>
-                <li><a href="/movie/movieList" class=" glyphicon glyphicon-film"> MOVIELIST</a></li>
+                <li><a href="/actor/actorList" > <span class="actorlist glyphicon glyphicon-th-list"> ACTORLIST</span></a></li>
+                <li><a href="/movie/movieList">  <span class="movielist glyphicon glyphicon-film"> MOVIELIST</span></a></li>
             </ul>
         </div>
     </div>
